@@ -1,12 +1,10 @@
 class Dollar extends Money {
-   
+
    Dollar(int amount) {
       this.amount = amount;
    }
-   
-   Dollar times(int multiplier) {
+
+   Money times(int multiplier) { // Tipo de retorno alterado de Dollar para Money
       return new Dollar(amount * multiplier);
    }
-   
-   // equals foi movido para Money, nao e' mais necessario aqui
 }
